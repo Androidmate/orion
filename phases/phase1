@@ -1,5 +1,5 @@
 #!/bin/sh
-echo Fetching modules..
+echo Fetching..
 wget -O /data/local/tmp/dropkeys https://github.com/Androidmate/orion/raw/master/modules/dropkeys
 wget -O /data/local/tmp/tmuxserve https://github.com/Androidmate/orion/raw/master/modules/tmuxserve
 
