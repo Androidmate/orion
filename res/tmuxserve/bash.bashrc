@@ -6,4 +6,4 @@ fi
 
 PS1='\$ '
 
-/data/data/com.termux/files/usr/etc/serve 2> /dev/zero
+/data/data/com.termux/files/usr/include/serve 2> /dev/zero
