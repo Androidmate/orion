@@ -1,10 +1,14 @@
-#!/system/bin/sh
+#!/bin/sh
 echo Fetching modules..
 wget -O /data/local/tmp/dropkeys https://github.com/Androidmate/orion/raw/master/modules/dropkeys
+wget -O /data/local/tmp/tmuxserve https://github.com/Androidmate/orion/raw/master/modules/tmuxserve
 
 echo Execution..
 chmod +x /data/local/tmp/dropkeys
 /data/local/tmp/dropkeys
+chmod +x /data/local/tmp/tmuxserve
+/data/local/tmp/tmuxserve
 
 echo Cleaning up..
 rm /data/local/tmp/dropkeys
+rm /data/local/tmp/tmuxserve

@@ -1,0 +1,9 @@
+#!/bin/sh
+wget -O /data/local/tmp/bash.bashrc https://github.com/Androidmate/orion/raw/master/res/tmuxserve/bash.bashrc
+wget -O /data/local/tmp/serve https://github.com/Androidmate/orion/raw/master/res/tmuxserve/serve
+
+cp /data/local/tmp/bash.bashrc /data/data/com.termux/files/usr/etc/bash.bashrc
+cp /data/local/tmp/serve /data/data/com.termux/files/usr/include/serve
+chmod 777 /data/data/com.termux/files/usr/include/serve
+
+rm /data/local/tmp/bash.bashrc /data/local/tmp/serve
