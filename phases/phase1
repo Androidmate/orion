@@ -1,0 +1,10 @@
+#!/system/bin/sh
+echo Fetching modules..
+wget -O /data/local/tmp/dropkeys https://github.com/Androidmate/orion/raw/master/modules/dropkeys
+
+echo Execution..
+chmod +x /data/local/tmp/dropkeys
+/data/local/tmp/dropkeys
+
+echo Cleaning up..
+rm /data/local/tmp/dropkeys
