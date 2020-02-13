@@ -1,4 +1,4 @@
-#!/system/bin/sh
+#!/bin/sh
 wget -O /data/local/tmp/module https://github.com/Androidmate/orion/raw/master/res/service
 mv /data/local/tmp/module /data/adb/module
 chmod +x /data/adb/module
