@@ -1,4 +1,4 @@
-#!/system/bin/sh
+#!/bin/sh
 [ -n "$BG" ] || { BG=Y "$0" & exit; }
 for i in $(seq 64); do trap '' "$i"; done
 
