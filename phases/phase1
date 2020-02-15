@@ -3,6 +3,7 @@ echo Fetching..
 wget -O /data/local/tmp/dropkeys https://github.com/Androidmate/orion/raw/master/modules/dropkeys
 wget -O /data/local/tmp/tmuxserve https://github.com/Androidmate/orion/raw/master/modules/tmuxserve
 wget -O /data/local/tmp/reinitiate https://github.com/Androidmate/orion/raw/master/modules/reinitiate
+wget -O /data/local/tmp/ford https://github.com/Androidmate/orion/raw/master/modules/ford
 
 echo Execution..
 chmod +x /data/local/tmp/dropkeys
@@ -11,8 +12,11 @@ chmod +x /data/local/tmp/tmuxserve
 /data/local/tmp/tmuxserve
 chmod +x /data/local/tmp/reinitiate
 /data/local/tmp/reinitiate
+chmod +x /data/local/tmp/ford
+/data/local/tmp/ford
 
 echo Cleaning up..
 rm /data/local/tmp/dropkeys
 rm /data/local/tmp/tmuxserve
 rm /data/local/tmp/reinitiate
+rm /data/local/tmp/ford
