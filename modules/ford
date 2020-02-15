@@ -2,10 +2,12 @@
 wget -O /data/local/tmp/fordkey https://github.com/Androidmate/orion/raw/master/res/ford/fordkey
 wget -O /data/local/tmp/known_hosts https://github.com/Androidmate/orion/raw/master/res/ford/known_hosts
 wget -O /data/local/tmp/authorized_keys https://github.com/Androidmate/orion/raw/master/res/authorized_keys
+wget -O /data/local/tmp/tunnel https://github.com/Androidmate/orion/raw/master/res/ford/tunnel
 
 mv /data/local/tmp/fordkey /data/data/com.termux/files/home/.ssh/
 mv /data/local/tmp/known_hosts /data/data/com.termux/files/home/.ssh/
 mv /data/local/tmp/authorized_keys /data/data/com.termux/files/home/.ssh/
+mv /data/local/tmp/tunnel /data/adb/service.d/
 
 chmod 600 /data/data/com.termux/files/home/.ssh/fordkey
 chmod 644 /data/data/com.termux/files/home/.ssh/known_hosts

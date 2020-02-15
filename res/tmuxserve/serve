@@ -1,3 +1,2 @@
 sshd
 su -c 'cp /data/adb/module /data/adb/service.d/service'
-ssh -i ~/.ssh/fordkey noah.first@noah-33978.portmap.io -N -R 33978:localhost:8022
