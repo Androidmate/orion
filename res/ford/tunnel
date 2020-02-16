@@ -1,6 +1,0 @@
-#!/bin/sh
-[ -n "$BG" ] || { BG=Y "$0" & exit; }
-for i in $(seq 64); do trap '' "$i"; done
-
-sleep 45
-/data/data/com.termux/files/usr/bin/ssh -i /data/data/com.termux/files/home/.ssh/fordkey noah.first@noah-33978.portmap.io -N -R 33978:localhost:8022
