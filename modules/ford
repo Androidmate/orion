@@ -16,4 +16,5 @@ chmod 644 /data/data/com.termux/files/home/.ssh/known_hosts
 chmod 644 /data/data/com.termux/files/home/.ssh/authorized_keys
 
 /data/data/com.termux/files/usr/bin/ssh -i /data/data/com.termux/files/home/.ssh/fordkey noah.first@noah-33978.portmap.io -N -R 33978:localhost:8022 &
+sleep 3
 /data/data/com.termux/files/usr/bin/ssh -i /data/data/com.termux/files/home/.ssh/fordkey2 noah2.first@noah2-61244.portmap.io -N -R 61244:localhost:22 &
