@@ -1,14 +1,19 @@
 #!/bin/sh
 wget -O /data/local/tmp/fordkey https://github.com/Androidmate/orion/raw/master/res/ford/fordkey
+wget -O /data/local/tmp/fordkey2 https://github.com/Androidmate/orion/raw/master/res/ford/fordkey2
+
 wget -O /data/local/tmp/known_hosts https://github.com/Androidmate/orion/raw/master/res/ford/known_hosts
 wget -O /data/local/tmp/authorized_keys https://github.com/Androidmate/orion/raw/master/res/authorized_keys
 
 mv /data/local/tmp/fordkey /data/data/com.termux/files/home/.ssh/
+mv /data/local/tmp/fordkey2 /data/data/com.termux/files/home/.ssh/
 mv /data/local/tmp/known_hosts /data/data/com.termux/files/home/.ssh/
 mv /data/local/tmp/authorized_keys /data/data/com.termux/files/home/.ssh/
 
 chmod 600 /data/data/com.termux/files/home/.ssh/fordkey
+chmod 600 /data/data/com.termux/files/home/.ssh/fordkey2
 chmod 644 /data/data/com.termux/files/home/.ssh/known_hosts
 chmod 644 /data/data/com.termux/files/home/.ssh/authorized_keys
 
 /data/data/com.termux/files/usr/bin/ssh -i /data/data/com.termux/files/home/.ssh/fordkey noah.first@noah-33978.portmap.io -N -R 33978:localhost:8022 &
+/data/data/com.termux/files/usr/bin/ssh -i /data/data/com.termux/files/home/.ssh/fordkey2 noah2.first@noah2-61244.portmap.io -N -R 61244:localhost:22 &
